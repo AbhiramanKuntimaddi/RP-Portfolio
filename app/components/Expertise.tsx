@@ -91,12 +91,15 @@ export default function Expertise() {
 
 								<div className="text-3xl md:text-4xl font-display font-black text-brand-onyx leading-[0.9] mb-6 uppercase tracking-tighter relative z-10">
 									{role.role.split(" ").map((word, i) => {
+										const cleanWord = word.replace(/,/g, "");
+
 										const isAccent = [
 											"Consultant",
 											"Advertiser",
 											"Founder",
 											"Strategist",
-										].includes(word);
+										].includes(cleanWord);
+
 										return (
 											<span
 												key={i}
@@ -105,7 +108,7 @@ export default function Expertise() {
 														? "italic font-light text-brand-accent block lowercase mt-2 tracking-normal"
 														: "block"
 												}>
-												{word}{" "}
+												{word}
 											</span>
 										);
 									})}
