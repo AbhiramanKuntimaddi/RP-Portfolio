@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Raghav Puppala",
   },
   description:
-    "Boutique financial consulting and digital strategy for the modern era. Bridging financial security with philanthropic partnerships.",
+    "Financial consulting and digital strategy for the modern era. Bridging financial security with philanthropic partnerships.",
   keywords: ["Consulting", "Finance", "Digital Strategy", "Raghav Puppala", "Portfolio"],
   authors: [{ name: "Raghav Puppala" }],
   creator: "Raghav Puppala",

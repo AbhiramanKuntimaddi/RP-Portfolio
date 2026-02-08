@@ -17,7 +17,6 @@ export default function Header() {
         <nav className="relative w-full bg-brand-paper py-8 md:py-10 px-6 md:px-16 z-50">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 
-                {/* Logo Identity */}
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -29,7 +28,6 @@ export default function Header() {
                     </Link>
                 </motion.div>
 
-                {/* Desktop Navigation */}
                 <div className="flex items-center gap-4 md:gap-8">
                     <div className="hidden lg:flex gap-10 mr-4">
                         {navLinks.map((link) => (
@@ -57,7 +55,6 @@ export default function Header() {
                         Connect
                     </a>
 
-                    {/* Mobile Menu Toggle */}
                     <button 
                         onClick={() => setIsOpen(!isOpen)}
                         className="lg:hidden p-2 text-brand-onyx focus:outline-none"
@@ -67,7 +64,6 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Mobile Menu Drawer */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
