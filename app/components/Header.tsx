@@ -31,7 +31,7 @@ export default function Header() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, ease: easeExpo }}>
-                    <Link href="/" className="group block relative z-[70]">
+                    <Link href="/" className="group block relative z-70">
                         <h1 className={`text-xl md:text-2xl font-display font-black tracking-tighter transition-colors duration-500 ${isOpen ? 'text-brand-onyx' : 'text-brand-onyx'}`}>
                             RAGHAV PUPPALA<span className="text-brand-accent group-hover:opacity-50 transition-opacity">.</span>
                         </h1>
@@ -67,7 +67,7 @@ export default function Header() {
 
                     <button 
                         onClick={() => setIsOpen(!isOpen)}
-                        className="lg:hidden p-2 text-brand-onyx z-[70] focus:outline-none"
+                        className="lg:hidden p-2 text-brand-onyx z-70 focus:outline-none"
                     >
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
@@ -81,7 +81,7 @@ export default function Header() {
                         animate={{ y: 0 }}
                         exit={{ y: "-100%" }}
                         transition={{ duration: 0.8, ease: easeExpo }}
-                        className="fixed inset-0 bg-brand-paper z-[60] flex flex-col justify-center px-8 lg:hidden"
+                        className="fixed inset-0 bg-brand-paper z-60 flex flex-col justify-center px-8 lg:hidden"
                     >
                         <div className="space-y-12">
                             <motion.p 
