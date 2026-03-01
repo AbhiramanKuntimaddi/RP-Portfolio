@@ -17,8 +17,10 @@ export default function Header() {
     }, [isOpen]);
 
     const navLinks = [
-        { name: "Expertise", href: "#services" },
         { name: "About", href: "#about" },
+        { name: "Services", href: "#services" },
+        { name: "Initiatives", href: "#initiatives" },
+        { name: "Testimony", href: "#testimony" },
     ];
 
     return (

@@ -53,7 +53,7 @@ export default function Hero() {
 
 						<div className="relative w-full h-full z-10 overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000">
 							<Image
-								src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop"
+								src="/raghav-puppala.jpeg"
 								alt="Raghav Puppala"
 								fill
 								priority
